@@ -79,7 +79,7 @@ sensor.then(function(tag) {
         if(objectTemp < 20) {
             log("Nå er tempen litt for lav. Den er" + ambientTemp);
         }
-        else(objectTemp > 23) {
+        else {
             log("Nå er tempen helt perf. Den er" + ambientTemp);
         }
     })
