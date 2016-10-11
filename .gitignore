@@ -1,3 +1,7 @@
 node_modules/*
 .idea/*
 platforms/*
+.idea/iot_computas.iml
+.idea/modules.xml
+.idea/workspace.xml
+node_modules/

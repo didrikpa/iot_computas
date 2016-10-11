@@ -1,2 +1,4 @@
 # iot_computas
-Repo for the iot-course by Computas.
+
+This is the repository for TeamBedkøm in the IOT-challenge made by Computas.
+
