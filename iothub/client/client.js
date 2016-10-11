@@ -22,14 +22,17 @@ socket.on('client:display', function (payload) {
     var device = document.createElement('td');
     var object = document.createElement('td');
     var ambient = document.createElement('td');
+    var humidity = document.createElement('td');
     // add content to columns
     device.textContent = payload.id;
     object.textContent = payload.data.objectTemp;
     ambient.textContent = payload.data.ambientTemp;
+    humidity.textContent = payload.data.humidity;
     // append columns to row
     tr.appendChild(device);
     tr.appendChild(object);
     tr.appendChild(ambient);
+    tr.appendChild(humidity);
     // append row to tbody
     tbody.appendChild(tr);
   }
