@@ -73,8 +73,14 @@ sensor.then(function(tag) {
 // A simple example of an act on the irTemperature sensor.
 sensor.then(function(tag) {
     tag.on("irTemperatureChange", function(objectTemp, ambientTemp) {
-        if(objectTemp > 25) {
-            log("You're so hot");
+        if(objectTemp > 23) {
+            log("Nå er tempen litt for høy. Den er" + ambientTemp);
+        }
+        if(objectTemp < 20) {
+            log("Nå er tempen litt for lav. Den er" + ambientTemp);
+        }
+        else(objectTemp > 23) {
+            log("Nå er tempen helt perf. Den er" + ambientTemp);
         }
     })
 });
