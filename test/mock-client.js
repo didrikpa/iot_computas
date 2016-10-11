@@ -1,10 +1,12 @@
-var socket = require('socket.io-client')('http://localhost:3000');
+var socket = require('socket.io-client')('https://thawing-sands-27495.herokuapp.com');
 
 var objectTemp = 0;
 var ambientTemp = 0;
 
 socket.on('connect', function() {
     console.log('Mock temperature client connected to IoTHub-Server');
+
+
     setInterval(function() {
         objectTemp++;
         ambientTemp = ambientTemp + 2;
